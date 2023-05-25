@@ -5,11 +5,11 @@ import Button from "../ui/Button";
 import data from "../../data.json";
 
 const Wrapper = styled.div`
-    width: {calc(100% - 32px)};
+    width: calc(100% - 32px);
     padding: 16px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 `;
 
@@ -35,4 +35,4 @@ function MainPage(props){
     )
 }
 
-export default MainPage
+export default MainPage;

@@ -5,11 +5,11 @@ import TextInput from "../ui/TextInput";
 import Button from "../ui/Button";
 
 const Wrapper = styled.div`
-    width: {calc(100% - 32px)};
+    width: calc(100% - 32px);
     padding: 16px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 `;
 
@@ -32,7 +32,7 @@ function PostWritePage(props){
             <Container>
                 <TextInput height={20} value={title} onChange={event => setTitle(event.target.value)} placeholder="제목을 입력해주세요." />
                 <TextInput height={40} value={content} onChange={event => setContent(event.target.value)} placeholder="내용을 입력해주세요." />
-                <Button title="글 작성하기" onClick={() => navigate(`/post/${title}`)} />
+                <Button title="글 작성하기" onClick={() => navigate(`/`)} />
             </Container>
         </Wrapper>
     )
